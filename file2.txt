@@ -1,6 +1,0 @@
-Exercise 2: Branching and Merging
-1. Create a new branch called “feature”
-2. Add new files in the feature branch
-3. Switch back to main branch
-4. Merge feature branch into main
-5. Delete the feature branch
