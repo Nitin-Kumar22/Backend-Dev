@@ -1,0 +1,53 @@
+Que 1. What is the difference between synchronous and asynchronous file operations?
+Answer: 1) synchronous file operations block the execution of the program until the operation is complete 
+while asynchronous file operation allows the program to cintinue executing while the file operation is being performed in the 
+background.
+2)synchronous file operation are easier to understand and debug but can lead to performance issue in large application 
+while asynchronous file operation can inprove performance but can be more complex to implement and debug.
+
+Que 2. When should you use file streams instead of reading the entire file?
+Answer: file streams are more efficient for handling large files or when you want to process data in chunks. they allow you to read 
+or write data increamently without loading the entire file into memory at once which can be beneficial for performance and memeory 
+management. file streams are particularly useful when dealing with large files that may not fit into memory or when 
+you wants to process data as it is being read or written, such as when working with real-time data or when you want to start processing 
+data before the entire file is available.
+
+Que 3. Explain the purpose of the ‘utf8’ encoding parameter in file operations.
+Answer: the utf-8 encoding parameter is file operation is used to specify the charater encoding when raeding or writing Files. 
+utf-8 is a widely used charater encoding that can represent a wide range of characters for different kanguages and symbols.
+when you specify utf-8 encoding, it ensures that the text is correctly interpreted and stored, allowing for proper handling of
+special characters and non-english text.
+
+Ques 4. What are the common error codes in file system operations and what do they mean?
+Answer:Common error codes in file system operations include:
+    1) ENOENT: No such file or directory. This error occurs when the specified file or directory does not exist.
+    2) EACCES: Permission denied. This error occurs when the user does not have the necessary permissions to access the file or directory.
+    3) EEXIST: File already exists. This error occurs when trying to create a file that already exists.
+    4) EISDIR: Is a directory. This error occurs when trying to perform a file operation on a directory.
+    5) ENOTDIR: Not a directory. This error occurs when trying to perform a directory operation on a file.
+    6) EROFS: Read-only file system. This error occurs when trying to write to a file on a read-only file system.
+
+
+5. How would you safely delete a directory with all its contents?
+Answer:to delete a directory with all its contents safely, you can use the rm command with the -r (recuresive option) and -f (force option).
+SYNTAX:
+rm -rf directory_name
+this command will dlete the directory and all the content inside it without prompting for configuration. however be caution 
+when using this command as it can lead to data loss if used incorrectly.
+
+
+Ques 6. Explain the concept of piping in streams with an example.
+Answer: Piping in streams is a method of connecting the output of one stream to the input of another stream. it allows data to flow from 
+one stream to another without the need for intermediate storage or manual handling of data. this is particulary useful when 
+working with large data sets or when you want to process data in contigueous manner.
+
+Que 7. Why is it important to handle errors in file operations?
+answer: Error handling in file operations is essential to manage unpredictable failures such as missing files, permission issues
+ or resource limitations, thereby preventing crashes, ensuring data integrity and improving the robustness and reliability
+of the application.
+
+Ques 8. What is the difference between writeFile and appendFile methods?
+Answer:The writeFile method is used to write data to a file. If the file already exists, it will overwrite the existing content.
+If the file does not exist, it will create a new file and write the data to it.
+The appendFile method is used to append data to a file. If the file already exists, it will add the new data to the end of
+the existing content.
