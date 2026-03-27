@@ -1,2 +1,0 @@
-this is my laptop 
-and working on node js 
