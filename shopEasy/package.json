@@ -1,0 +1,37 @@
+{
+  "name": "ecommerce-platform",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon shopEasy/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nitin-Kumar22/Backend-Dev.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nitin-Kumar22/Backend-Dev/issues"
+  },
+  "homepage": "https://github.com/Nitin-Kumar22/Backend-Dev#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "connect-mongo": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^8.3.2",
+    "express-session": "^1.19.0",
+    "helmet": "^8.1.0",
+    "http-status-codes": "^2.3.0",
+    "joi": "^18.1.2",
+    "mongoose": "^9.4.1",
+    "validater": "^1.0.5"
+  }
+}
